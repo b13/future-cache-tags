@@ -1,0 +1,5 @@
+# cat=messenger; type=boolean; label=Dispatch delayed messages: When a scheduled record is saved, dispatch a message that is delivered at the due time and runs the worker. Needs a transport that supports delays (e.g. "doctrine") and a running "messenger:consume" process. The CLI worker keeps working in addition.
+useMessenger = 0
+
+# cat=messenger; type=string; label=Messenger transport: The transport the message is routed to when "useMessenger" is enabled.
+messengerTransport = doctrine

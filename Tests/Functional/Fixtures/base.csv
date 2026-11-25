@@ -1,0 +1,9 @@
+"be_users"
+,"uid","pid","username","password","admin","workspace_perms","deleted","disable"
+,1,0,"admin","$argon2i$v=19$m=65536,t=16,p=1$bWZoUDhaaFZ2V3lvYjdNSg$QM5Kp6s0f4X4BbnIQtc8eQqo0dU0YXCmAlbbUn5qNQo",1,1,0,0
+"pages"
+,"uid","pid","title","slug","doktype","deleted","hidden","starttime","endtime","TSconfig"
+,1,0,"Root","/",1,0,0,0,0,
+,2,1,"Storage","/storage",254,0,0,0,0,"TCEMAIN.clearCacheCmd = 3, cacheTag:news_list"
+,3,1,"News list","/news",1,0,0,0,0,
+,4,1,"Other","/other",1,0,0,0,0,

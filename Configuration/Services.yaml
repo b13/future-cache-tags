@@ -1,0 +1,23 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  B13\FutureCacheTags\:
+    resource: '../Classes/*'
+    exclude:
+      - '../Classes/Cache/FlushTarget.php'
+      - '../Classes/Messenger/ProcessDueRecordsMessage.php'
+      - '../Classes/Schedule/ProcessingResult.php'
+      - '../Classes/Schedule/ScheduledRecord.php'
+      - '../Classes/Schedule/ScheduledTable.php'
+      # Registered in Configuration/Services.php depending on the TYPO3 version:
+      # CoreCacheFlusherAdapter needs CacheFlusher, which only exists since TYPO3 v15
+      - '../Classes/Cache/CoreCacheFlusherAdapter.php'
+      - '../Classes/Cache/DataHandlerCacheFlushAdapter.php'
+
+  # Instantiated by DataHandler via GeneralUtility::makeInstance(), keeps state per DataHandler run
+  B13\FutureCacheTags\Hook\DataHandlerHook:
+    public: true
+    shared: false

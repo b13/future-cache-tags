@@ -1,0 +1,10 @@
+parameters:
+  level: 5
+
+  paths:
+    - %currentWorkingDirectory%/Classes
+    - %currentWorkingDirectory%/Tests
+
+  excludePaths:
+    # DataHandler::prepareCacheFlush() is gone in v15, CacheFlusher is used instead
+    - %currentWorkingDirectory%/Classes/Cache/DataHandlerCacheFlushAdapter.php

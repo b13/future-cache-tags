@@ -1,0 +1,10 @@
+parameters:
+  level: 5
+
+  paths:
+    - %currentWorkingDirectory%/Classes
+    - %currentWorkingDirectory%/Tests
+
+  excludePaths:
+    # CacheFlusher only exists since TYPO3 v15
+    - %currentWorkingDirectory%/Classes/Cache/CoreCacheFlusherAdapter.php

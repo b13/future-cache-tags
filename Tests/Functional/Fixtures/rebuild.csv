@@ -1,0 +1,15 @@
+"pages"
+,"uid","pid","title","slug","doktype","deleted","hidden","starttime","endtime","t3ver_wsid","t3ver_oid","t3ver_state","sys_language_uid","l10n_parent"
+,10,1,"Future page","/future",1,0,0,1700003600,0,0,0,0,0,0
+,11,1,"Expired page","/expired",1,0,0,1600000000,1690000000,0,0,0,0,0
+"tt_content"
+,"uid","pid","header","deleted","hidden","starttime","endtime","t3ver_wsid","t3ver_oid","t3ver_state","sys_language_uid","l18n_parent"
+,100,2,"Future starttime",0,0,1700003600,0,0,0,0,0,0
+,101,2,"Future endtime",0,0,0,1700007200,0,0,0,0,0
+,102,2,"Started, ends later",0,0,1600000000,1700010800,0,0,0,0,0
+,103,2,"Past",0,0,1600000000,1690000000,0,0,0,0,0
+,104,2,"Hidden",0,1,1700003600,0,0,0,0,0,0
+,105,2,"Deleted",1,0,1700003600,0,0,0,0,0,0
+,106,2,"Workspace version",0,0,1700003600,0,1,103,0,0,0
+,107,2,"Translation of 103",0,0,1700014400,0,0,0,0,1,103
+,108,2,"Nothing scheduled",0,0,0,0,0,0,0,0,0
